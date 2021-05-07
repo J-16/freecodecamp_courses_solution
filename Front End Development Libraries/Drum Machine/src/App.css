@@ -1,0 +1,175 @@
+body{
+  background-color: rgb(22, 22, 74);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#drum-machine{
+  display: grid;
+  margin-left: 100px;
+}
+
+#display{
+  margin-top: 20px;
+  display: flex;
+  height: 200px;
+  width: 500px;
+  border-color:wheat ;
+  border-style: solid;
+  padding: 20px;
+}
+
+#switch{
+  width: 50px;
+  height: 30px;
+  background-color: rgb(208, 51, 51);
+  border: black;
+  margin: 0;
+  position: relative;
+  padding-top: 0.5px;
+  margin-top: 65px;
+}
+
+.switch-button{
+  width:25px;
+  background-color: rgb(123, 159, 237);
+  height: 24px;
+  margin: 2px;
+  border-radius: 5px;
+  float:left;
+}
+
+.switch-button-off{
+  width:25px;
+  background-color: rgb(123, 159, 237);
+  height: 24px;
+  margin: 2px;
+  border-radius: 5px;
+  float:right;
+}
+
+ul{
+  display: flex;
+}
+
+#volume{
+  background-color: rgb(193, 172, 172);
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  margin-left: 20px;
+  position: relative;
+}
+
+.volume .vol{
+  --rotation:0;
+  position: absolute;
+  text-align: center;
+  margin: -15px 0 0 -40px ;
+  color: black;
+  font-size: 18px;
+  width: 100%;
+  height: 100%;
+  transform: rotate(var(--rotation));
+}
+
+.volume .vol-1{--rotation:240deg;}
+.volume .vol-2{--rotation:280deg;}
+.volume .vol-3{--rotation: 320deg;}
+.volume .vol-4{--rotation: 360deg;}
+.volume .vol-5{--rotation: 40deg;}
+.volume .vol-6{--rotation: 800deg;}
+
+#volume-inner{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: rgb(62, 68, 156);
+  text-align: center;
+  margin: -2% -1% -1% 25px;
+  padding: 25px;
+  position: absolute;
+}
+
+.vol-dot{
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 100px;
+  text-align: center;
+  transform: rotate(60deg);
+}
+#display-text{
+  margin-left: 30px;
+  margin-top: 50px;
+  height: 50px;
+  width: 200px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+}
+
+
+
+li{
+  list-style-type: none;
+  position: relative;
+}
+
+
+.black{
+  background-color: black;
+  height: 150px;
+  width: 35px;
+  z-index: 2;
+  border: 1px solid #000;
+  border-radius:0 0 3px 3px;
+}
+
+.black2{
+  background:linear-gradient(to right,#444 0%,#222 100%);
+  height: 150px;
+  width: 35px;
+  z-index: 2;
+  border: 1px solid #000;
+  border-radius:0 0 3px 3px;
+}
+
+.white {
+  border-left:1px solid #bbb;
+  border-right:1px solid #bbb;
+  border-bottom:1px solid #bbb;
+  border-radius:0 0 5px 5px;
+  background-color: white;
+  width:60px;
+  height: 300px;
+  border-style: solid;
+  margin: 0;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.white2{
+  border-top:1px solid #777;
+  background-color: white;
+  width:60px;
+  height: 300px;
+}
+
+.white:active{
+  border-top:1px solid #777;
+  border-left:1px solid #999;
+  border-bottom:1px solid #999;
+}
+
+
+.black:active{
+  background:linear-gradient(to right,#444 0%,#222 100%)
+}
+
+#Qi, #Wi, #Ei, #Ai, #Si,  #Zi, #Xi, #Ci, #Vi ,#Bi ,#Ni {
+  margin: 0 0 0 -1em;
+}

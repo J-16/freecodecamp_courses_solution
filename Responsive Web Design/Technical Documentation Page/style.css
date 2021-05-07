@@ -1,0 +1,112 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#body{
+  display: grid;
+  grid-template-columns: 0.2fr 1fr;
+}
+
+#left-head{
+  text-align: center;
+  border-style: solid;
+  border-bottom-width: 6px;
+}
+
+#left {
+  position: fixed;
+  min-width: 300px;
+  width: 200px;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  height: 100%;
+  text-align: center;
+}
+
+nav{
+  margin-top: 20px;
+  color: black;
+  border-style: solid;
+  text-decoration: none;
+}
+
+nav ul li{
+  padding:10px;
+  border-color: rgb(100, 95, 95);
+  border-style: solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-width: 1px;
+  text-decoration: none;
+}
+
+nav ul li a{
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+}
+
+#nav-a{
+  text-decoration: none;
+}
+
+#right{
+  position: absolute;
+  margin-left: 300px;
+  padding: 50px;
+}
+
+.main-section{
+  margin-top: 30px;
+}
+
+header{
+  font-size: 30px;
+  text-decoration: wavy;
+}
+
+#main-body{
+  padding: 30px;
+  justify-content: center;
+}
+
+code{
+  text-align: center;
+  justify-content: center;
+  padding-left: 30px;
+}
+
+#code-print{
+  padding-left: 50px;
+}
+
+#main-ul{
+  padding-left: 30px;
+  padding-top: 10px;
+}
+
+
+@media (max-width:800px){
+
+  #body{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  #left{
+    position: relative;
+  }
+
+  #right{
+    margin-top: 450px;
+    margin-left: 0px;
+  }
+
+}

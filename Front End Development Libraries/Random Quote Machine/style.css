@@ -1,0 +1,30 @@
+
+body{
+  background-color: red;
+}
+
+.centering {
+  display: table;
+  margin: 15% auto;
+  background-color: white;
+  color: red;
+}
+
+.twitter-bg{
+  background-color: red;
+  align-items: center;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+}
+
+.twitter{
+  margin-top: 6px;
+  color: white
+}
+
+.button{
+  background-color: red;
+  border: white;
+  color: white;
+}

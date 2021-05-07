@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title> Survey Form </title>
+</head>
+<body>
+  <div id="title-div" >
+    <h1 id="title"> Survey form </h1>
+    <p id="description"> Please provide 2 minutes of your precious time to make us improve our platform </p>
+  </div>
+  <div class="form-div">
+    <form id="survey-form">
+
+      <label id='name-label'> Name </label>
+      <input id='name' placeholder="Enter your name" required>
+
+      <label for='email' id='email-label'> Email </label> 
+        <input id='email' type='email' placeholder="Enter your email-id" required> 
+
+      <label for='number' id='number-label'> Rating </label> 
+        <input id='number' type='number' min='0' max='10' placeholder="In a scale of 10 (0-10)" required>
+      
+      <fieldset>
+       <legend id="radio-label-top">How satisfied are you with our serivce?  </legend>
+       <label id="radio-label"> 
+          <input id= "radio" type="radio" name="rate" value='fully-satisfied'> fully satisfied 
+        </label>
+       <label id="radio-label"> 
+          <input id= "radio" type="radio" name="rate" value='partially-satisfied'> partially satisfied 
+       </label>
+        <label  id="radio-label"> 
+          <input id= "radio" type="radio" name="rate" value='not-satisfied'> not satisfied 
+        </label>
+      </fieldset>
+
+      <label id= 'label-dropdown' for='dropdown' >What role fits your exactly?</label>
+      <select id="dropdown">
+        <option disbaled selected vlaue>Slect a option</option>
+        <option value="student" >Student </option>
+        <option value='Employee' >Employee </option>
+        <option value='Intern' >Intern </option>
+        <option value="other" >Other</option>
+      </select>
+
+      <div class='checkbox-div'>
+      <label> What would you like to see improved?<a class="a-label">(Check all that apply)</a></labe>
+        <label id='label-checkbox'>  <input type="checkbox" class="checkbox" value='Frontend'>Frontend </label>
+        <label id='label-checkbox'>  
+          <input  class="checkbox" type="checkbox"  value='Color'> Color 
+        </label>
+        <label id='label-checkbox'>  
+          <input  class="checkbox" type="checkbox" value='Additional-functionality'> Additional functionality
+        </label>
+        <label id='label-checkbox'> 
+          <input  class="checkbox" type="checkbox"  value='Blac-Theme'> Black Theme 
+        </label>
+        <label id='label-checkbox'>  
+          <input   class="checkbox" type="checkbox" value='Additional-Theme'> Additional Theme
+        </label>
+      </div>
+      
+      <textarea disabled> Thanks for providing your time. We will take necessary actions.</textarea>
+      
+     <div>
+      <input id="submit" type="submit">  
+     </div>
+    </form>
+  </div>
+</body>
+</html>
